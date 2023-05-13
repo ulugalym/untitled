@@ -1,0 +1,65 @@
+package day06;
+
+public class StringManipulations01 {
+    public static void main(String[] args) {
+        String s = "Java is easy";
+        String s1 = s.toUpperCase();
+        System.out.println("s1 = " + s1);
+        String s2 = s.toLowerCase();
+        System.out.println("s2 = " + s2);
+        char s3 = s.charAt(0);
+        System.out.println("s3 = " + s3);
+        char s4 = s.charAt(1), s5 = s.charAt(10);
+        System.out.println("s4 = " + s4);
+        System.out.println("s5 = " + s5);
+        System.out.println("" + s4 + s5);
+        int s6 = s.length();
+        System.out.println("s6 = " + s6);
+        String sub = s.substring(0, 4);
+        System.out.println("sub = " + sub);
+        String sub1 = s.substring(5, 7);
+        System.out.println("sub1 = " + sub1);
+        String sub2 = s.substring(8, 12);
+        System.out.println("sub2 = " + sub2);
+        String sub3 = s.substring(8);
+        System.out.println("sub3 = " + sub3);
+        boolean contains = s.contains("money");
+        System.out.println("contains = " + contains);
+        boolean starts = s.startsWith("Java");
+        System.out.println("starts = " + starts);
+        boolean starts1 = s.startsWith("is");
+        System.out.println("starts1 = " + starts1);
+        boolean starts2 = s.startsWith("is", 5);
+        System.out.println("starts2 = " + starts2);
+        String d = "Learn Java earn money";
+        boolean d1 = d.endsWith("earn money");
+        System.out.println("d1 = " + d1);
+        String d2 = d.replace("money", "dollar");
+        System.out.println("d2 = " + d2);
+        String d3 = d.replace("earn", "win");
+        System.out.println("d3 = " + d3);
+        String d4 = d.replace("a", "*");
+        System.out.println("d4 = " + d4);
+        String d41 = d.replace('e', '&');
+        System.out.println("d41 = " + d41);
+        String d5 = d.replace("n", "xxx");
+        System.out.println("d5 = " + d5);
+        String d6 = d.replace("a", "");
+        System.out.println("d6 = " + d6);
+        String t = "Ali 13 yasindadir!...";
+        String t1=t.replaceAll("[0-9]","*");
+        System.out.println("t1 = " + t1);
+        String t2=t.replaceAll("[0-9a-zA-Z]","?");
+        System.out.println("t2 = " + t2);
+        String t3=t.replaceAll("[aouieAOUIE]","!");
+        System.out.println("t3 = " + t3);
+        String t4=t.replaceAll("[^a-z]","<>");
+        System.out.println("t4 = "+t4);
+        String t5=t.replaceAll("[^a-zA-Z]","+");
+        System.out.println("t5 = " + t5);
+        String t6=t.replaceAll("[^ ]","?");
+        System.out.println("t6 = " + t6);
+        String t7=t.replaceAll("[^aouieAOUIE]","&");
+        System.out.println("t7 = " + t7);
+    }
+}
