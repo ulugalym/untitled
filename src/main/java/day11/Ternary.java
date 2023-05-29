@@ -23,5 +23,14 @@ public class Ternary {
         boolean sonuc=(sayi>99&&sayi<1000)||(sayi<-99&&sayi>-1000);
         String r3=sonuc?"Uc basamakli":"Uc basamakli degil";
         System.out.println("r3 = " + r3);
+        int d=2005;
+        String result=d%100==0?(d%400==0?"Loop":"Loop left"):(d%4==0?"Loop":"Loop left");
+        System.out.println("resul = " + result);
+        int k=1800;
+        String result1 = k%100==0?(k%400==0?"dogru":"yanlis"):(k%4==0?"dogru":"yanlis");
+        System.out.println("result1 = " + result1);
+        int f=1600;
+        String result2=f%100==0?(f%400==0?"evet":"hayir"):(f%4==0?"evet":"hayir");
+
     }
 }
